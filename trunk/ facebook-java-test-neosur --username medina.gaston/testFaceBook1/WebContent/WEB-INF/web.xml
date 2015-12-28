@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>
+	testFaceBook1</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		Log</display-name>
+		<servlet-name>Log</servlet-name>
+		<servlet-class>
+		com.testFaceBook1.Log</servlet-class>
+		<init-param>
+			<description>
+			</description>
+			<param-name>API_KEY</param-name>
+			<param-value>0db5d5960470b2698ae08c3582c41e22</param-value>
+		</init-param>
+		<init-param>
+			<description>
+			</description>
+			<param-name>SECRET_KEY</param-name>
+			<param-value>551cadd78e39d3a4c61ba00543e479e5</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		Hi</display-name>
+		<servlet-name>Hi</servlet-name>
+		<servlet-class>
+		com.testFaceBook1.Hi</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Log</servlet-name>
+		<url-pattern>/Log</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>Log</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Hi</servlet-name>
+		<url-pattern>/Hi</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
